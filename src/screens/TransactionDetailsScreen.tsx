@@ -190,7 +190,7 @@ export default function TransactionDetailsScreen() {
     navigation.setOptions({
       headerShown: true,
       title: title,
-      headerBackTitle: "Back",
+      headerBackTitle: "",
     });
   }, [navigation, title]);
 
