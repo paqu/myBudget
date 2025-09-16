@@ -182,31 +182,6 @@ export default function SettingsScreen() {
             subtitle="Update your personal information"
             onPress={handleProfileEdit}
           />
-
-          <SettingsItem
-            icon="bell"
-            title="Notifications"
-            subtitle="Manage notification preferences"
-            onPress={handleNotificationSettings}
-          />
-        </View>
-
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Preferences</Text>
-
-          <SettingsItem
-            icon="money"
-            title="Currency"
-            subtitle="PLN - Polish Złoty"
-            onPress={handleCurrencySettings}
-          />
-
-          <SettingsItem
-            icon="download"
-            title="Export Data"
-            subtitle="Download your transaction data"
-            onPress={handleExportData}
-          />
         </View>
 
         <View style={styles.section}>
