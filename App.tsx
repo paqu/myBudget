@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { LogBox } from "react-native";
+import NavigationProvider from "./src/navigation";
+
+// Ignore specific warnings (optional)
+LogBox.ignoreLogs([
+  "Warning: AsyncStorage has been extracted from react-native",
+  "Warning: componentWillReceiveProps has been renamed",
+  "Remote debugger", // Firebase warnings
+]);
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <NavigationProvider />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
